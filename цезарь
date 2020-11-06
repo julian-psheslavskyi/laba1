@@ -1,0 +1,13 @@
+al = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzабвгґдеєжзиіїйклмнопрстуфхцчшщьюяабвгґдеєжзиіїйклмнопрстуфхцчшщьюя012345678901234567890123456789"
+encrypt = input("Write message:")
+key = 1
+encrypt = encrypt.lower()
+encrypted = ""
+for letter in encrypt:
+    position = al.find(letter)
+    i = position + key
+    if letter in al:
+        encrypted = encrypted + al[i]
+    else:
+        encrypted = encrypted + letter
+print("Your result is: ", encrypted)
