@@ -1,0 +1,25 @@
+
+then = 'x'
+while then == 'x':
+    num_1 = float(input("Enter first number:"))
+    oper = input("Choise (+,-,/,)")
+    num_2 = float(input("Enter second number:"))
+
+    res = None
+
+    if oper == '+':
+        res = num_1 + num_2
+    elif oper == '-':
+       res = num_1 - num_2
+    elif oper == '/':
+        if num_2 == 0:
+            print("Ділення на нуль неможливе")
+        else:
+         res = num_1 / num_2
+    elif oper == '*':
+       res = num_1 * num_2
+    else:
+        print("Error")
+    if res is not None:
+        print("результат", res)
+    then = input("Enter 'x' to continue and any key to end")
