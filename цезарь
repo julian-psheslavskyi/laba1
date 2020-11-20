@@ -1,6 +1,6 @@
 al = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz" \
      "абвгґдеєжзиіїйклмнопрстуфхцчшщьюяабвгґдеєжзиіїйклмнопрстуфхцчшщьюя" \
-     "023456789023456789"
+     "01234567890123456789"
 encrypt = input("Write message:")
 key = 1
 encrypt = encrypt.lower()
